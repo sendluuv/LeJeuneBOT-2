@@ -2,14 +2,14 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 const config = require("./config.json")
 
-let prefix = "!"
+let prefix = "?"
 
-client.login(process.env.BOT_TOKEN)
+client.login(config.token)
 
 client.on("ready", () => {
     console.log("Connecté !")
     client.user.setStatus("online")
-    client.user.setActivity("!help : commandes", {type : 3})
+    client.user.setActivity("?help : commandes", {type : 3})
 })
 
 client.on("message", message => {
@@ -37,7 +37,6 @@ client.on("message", message => {
         message.reply("\nSpotify : https://open.spotify.com/playlist/6OP8oOZDRJ6L7H9Snrt6Dp?si=i_d05glRS2WWRhaH-g4m1Q\nDeezer : https://www.deezer.com/sharedplaylist-7928361682-d136d0ad")
     }
 
-//#region !help
     if(message.content === prefix + "help") {
         message.delete()
 
@@ -46,12 +45,11 @@ client.on("message", message => {
         .setColor("#F8CACB")
         .setAuthor(message.author.username, message.author.displayAvatarURL)
         .setTitle("Voici toutes les commandes disponibles :")
-        .setDescription("!insta\n!twitter\n!youtube\n!twitch\n!don\n!playlist")
+        .setDescription("?insta\n?twitter\n?youtube\n?twitch\n?don\n?playlist")
         .setThumbnail(message.author.displayAvatarURL)
         .setFooter(`Commande exécutée par ${message.author.username}`)
         .setTimestamp()
 
         message.channel.send(embed)
     }
-//#endregion
 })
