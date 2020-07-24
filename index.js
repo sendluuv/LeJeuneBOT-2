@@ -4,7 +4,7 @@ const config = require("./config.json")
 
 let prefix = "!"
 
-client.login(config.token)
+client.login(process.env.BOT_TOKEN)
 
 client.on("ready", () => {
     console.log("Connecté !")
