@@ -34,7 +34,7 @@ client.on("message", message => {
     }
 
     if(message.content === prefix + "playlist") {
-        message.reply("\nSpotify : https://open.spotify.com/playlist/6OP8oOZDRJ6L7H9Snrt6Dp?si=i_d05glRS2WWRhaH-g4m1Q\nDeezer : https://www.deezer.com/fr/playlist/7928361682")
+        message.reply("\nSpotify : https://open.spotify.com/playlist/6OP8oOZDRJ6L7H9Snrt6Dp?si=i_d05glRS2WWRhaH-g4m1Q\nDeezer : https://www.deezer.com/sharedplaylist-7928361682-d136d0ad")
     }
 
 //#region !help
