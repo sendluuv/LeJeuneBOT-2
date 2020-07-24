@@ -1,24 +1,24 @@
 {
 
-  "name": "LeJeuneBOT 2",
+  "name" : "LeJeuneBOT 2",
 
-  "description": "",
+  "description" : "",
 
-  "version": "1.0.0",
+  "version" : "1.0.0",
 
-  "main": "index.js",
+  "main" : "index.js",
 
-  "scripts": {
+  "scripts" : {
 
-    "start": "node index.js"
+    "start" : "node index.js"
 
   },
 
-  "dependencies": {
+  "dependencies" : {
 
-    "discord.js": "11.1.0",
+    "discord.js" : "11.1.0",
 
-    "request": "2.81.0"
+    "request" : "2.81.0"
 
   }
 
